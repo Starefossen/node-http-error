@@ -1,5 +1,6 @@
 {
   "name": "@starefossen/node-http-error",
+  "version": null,
   "description": "HTTP aware error class for all your Node.js applications",
   "main": "index.js",
   "scripts": {
