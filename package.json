@@ -1,0 +1,36 @@
+{
+  "name": "@starefossen/node-http-error",
+  "description": "HTTP aware error class for all your Node.js applications",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint test/ lib/ apps/ index.js",
+    "test": "mocha -R spec -b --check-leaks test.js",
+    "watch": "mocha -R progress -b --check-leaks -w test.js",
+    "release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/starefossen/node-http-error.git"
+  },
+  "keywords": [
+    "node",
+    "http",
+    "error"
+  ],
+  "author": "Hans Kristian Flaatten <hans@starefossen.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/starefossen/node-http-error/issues"
+  },
+  "homepage": "https://github.com/starefossen/node-http-error#readme",
+  "devDependencies": {
+    "eslint": "^1.10.2",
+    "eslint-config-airbnb": "^1.0.2",
+    "mocha": "^2.3.4",
+    "semantic-release": "^4.3.5"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}
