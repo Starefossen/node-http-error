@@ -22,6 +22,14 @@ build:
 
 deploy:
     steps:
+        # Reinstall node_modules to fix broken symlinks
+        # https://github.com/wercker/docs/issues/310
+        - script:
+            name: rm node_modules
+            code: rm -rf node_modules
+
+        - npm-install
+
         - script:
             name: semantic release pre
             code: npm run semantic-release -- pre
