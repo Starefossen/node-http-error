@@ -1,13 +1,19 @@
 {
-  "name": "@starefossen/node-http-error",
+  "name": "@starefossen/http-error",
   "version": null,
   "description": "HTTP aware error class for all your Node.js applications",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "test.js"
+  ],
   "scripts": {
-    "lint": "eslint test/ lib/ apps/ index.js",
-    "test": "mocha -R spec -b --check-leaks test.js",
-    "watch": "mocha -R progress -b --check-leaks -w test.js",
-    "semantic-release": "semantic-release"
+    "codacy-coverage": "codacy-coverage",
+    "cover": "istanbul cover --report lcovonly ./node_modules/.bin/_mocha -- test.js",
+    "lint": "eslint index.js test.js",
+    "semantic-release": "semantic-release",
+    "test": "mocha -bc --check-leaks -R tap test.js",
+    "test:watch": "mocha -wbc --check-leaks -R progress test.js"
   },
   "repository": {
     "type": "git",
@@ -24,13 +30,16 @@
     "url": "https://github.com/starefossen/node-http-error/issues"
   },
   "homepage": "https://github.com/starefossen/node-http-error#readme",
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "^1.10.2",
-    "eslint-config-airbnb": "^1.0.2",
-    "mocha": "^2.3.4",
+    "codacy-coverage": "^1.1.3",
+    "eslint": "^2.11.0",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3",
     "semantic-release": "^4.3.5"
   },
-  "dependencies": {},
   "engines": {
     "node": ">=4.0.0"
   }
