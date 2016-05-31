@@ -7,7 +7,7 @@
 [![Node version](https://img.shields.io/node/v/@starefossen/http-error.svg "Node version")](https://www.npmjs.com/package/@starefossen/http-error)
 [![Dependency status](https://img.shields.io/david/Starefossen/node-http-error.svg "Dependency status")](https://david-dm.org/Starefossen/node-http-error)
 
-HTTP aware error class `HttpError` for all your Node.js applications.
+HTTP aware `Error` class `HttpError` for all your Node.js applications.
 
 ## Purpose
 
