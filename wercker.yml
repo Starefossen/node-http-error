@@ -20,7 +20,12 @@ build:
         name: test coverage
         code: |
           npm run cover
-          cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage
+          cat ./coverage/lcov.info | npm run codacy-coverage
+
+    - script:
+        name: node security project
+        code: |
+          npm run nsp
 
   after-steps:
     - turistforeningen/slack-notifier:
