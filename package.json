@@ -13,7 +13,8 @@
     "lint": "eslint index.js test.js",
     "semantic-release": "semantic-release",
     "test": "mocha -bc --check-leaks -R tap test.js",
-    "test:watch": "mocha -wbc --check-leaks -R progress test.js"
+    "test:watch": "mocha -wbc --check-leaks -R progress test.js",
+    "postpublish": "greenkeeper-postpublish"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "eslint": "^2.11.0",
     "eslint-config-airbnb-base": "^3.0.1",
     "eslint-plugin-import": "^1.8.1",
+    "greenkeeper-postpublish": "^1.0.0",
     "istanbul": "^0.4.3",
     "mocha": "^2.5.3",
     "semantic-release": "^4.3.5"
