@@ -31,8 +31,8 @@ const express = require('express');
 
 const app = express();
 
-app.get('/some/route', function(req, res, next) {
-  db.get({…}, function(err, data) {
+app.get('/some/route', (req, res, next) => {
+  db.get({…}, (err, data) => {
     if (err) { return next(new HttpError('Database Query Failed', 500, err)); }
     if (!data) { return next(new HttpError('Object Not Found', 404)); }
 
@@ -40,7 +40,7 @@ app.get('/some/route', function(req, res, next) {
   });
 });
 
-app.use(function(req, res, next, httpError) {
+app.use((req, res, next, httpError) => {
   // print system errors to stderr
   if (httpError.code > 500) {
     if (httpError.error) {
