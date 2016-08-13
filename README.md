@@ -1,7 +1,8 @@
 # HttpError
 
 [![Build status](https://img.shields.io/wercker/ci/566166f590c1072f350993d2.svg "Build status")](https://app.wercker.com/project/bykey/9cf398f236208de61be9815bd091bc97)
-[![Codacy](https://img.shields.io/codacy/a04da1d7b2d44e1abb980f8ceed99711.svg "Codacy")](https://www.codacy.com/app/starefossen/node-http-error)
+[![Codacy grade](https://img.shields.io/codacy/grade/a04da1d7b2d44e1abb980f8ceed99711.svg "Codacy grade")](https://www.codacy.com/app/starefossen/node-http-error)
+[![Codacy coverage](https://img.shields.io/codacy/coverage/a04da1d7b2d44e1abb980f8ceed99711.svg "Codacy coverage")](https://www.codacy.com/app/starefossen/node-http-error)
 [![NPM downloads](https://img.shields.io/npm/dm/@starefossen/http-error.svg "NPM downloads")](https://www.npmjs.com/package/@starefossen/http-error)
 [![NPM version](https://img.shields.io/npm/v/@starefossen/http-error.svg "NPM version")](https://www.npmjs.com/package/@starefossen/http-error)
 [![Node version](https://img.shields.io/node/v/@starefossen/http-error.svg "Node version")](https://www.npmjs.com/package/@starefossen/http-error)
